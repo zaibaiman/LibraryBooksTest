@@ -1,4 +1,4 @@
-Android-CleanArchitecture [![Build Status](https://travis-ci.org/android10/Android-CleanArchitecture.svg?branch=master)](https://travis-ci.org/android10/Android-CleanArchitecture)
+LibraryBooksTest-CleanArchitecture
 =========================
 
 This is a sample app that is part of a test about how to architect asp mvc application using the [Uncle Bob's clean architecture approach](https://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html). 
@@ -15,27 +15,26 @@ Architectural reactive approach
 -----------------
 ![http://fernandocejas.com/2015/07/18/architecting-android-the-evolution/](http://fernandocejas.com/wp-content/uploads/2015/07/clean_architecture_evolution.png)
 
-Local Development
+Folder Structure
+-----------------
+ * `build` Usually contains just a build script or two, but can sometimes include supporting files (e.g., PowerShell scripts, EXEs, and the parameters file).
+ * `doc` Contains documents related to the code base; this might include developer documents, installation guides, tips, requirements, images, and wireframes.
+ * `lib` Contains all third-party libraries and packages used by the application(s) in this source tree; as stated previously, you will configure NuGet to place downloaded packages in this folder.
+ * `setup` Contains the code or scripts used to deploy the application. This might be just a PowerShell, MSBuild, or NAnt script; or, it might be WiX source code or something similar.
+ * `src` Your source code! All of the code you write for the application goes here. This folder usually contains your Visual Studio solution file(s), with all project folders being contained here.
+
+Application Structure
 -----------------
 
-Here are some useful Gradle/adb commands for executing this example:
-
- * `./gradlew clean build` - Build the entire example and execute unit and integration tests plus lint check.
- * `./gradlew installDebug` - Install the debug apk on the current connected device.
- * `./gradlew runUnitTests` - Execute domain and data layer tests (both unit and integration).
- * `./gradlew runAcceptanceTests` - Execute espresso and instrumentation acceptance tests.
-
-Code style
------------
-
-Here you can download and install the java codestyle.
-https://github.com/android10/java-code-styles
+ * `LibraryBooks.Domain` - Holds the domain entities and logic.
+ * `LibraryBooks.Data` - Set up for persistence via a repository created with the Entity Framework.
+ * `LibraryBooks.WebUI` - Holds the controllers and views; acting as the UI for the SportsStore application.
 
 
 License
 --------
 
-    Copyright 2014 Frank Mendoza
+    Copyright 2015 Frank Mendoza
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -49,7 +48,3 @@ License
     See the License for the specific language governing permissions and
     limitations under the License.
 
-
-![http://www.fernandocejas.com](http://www.android10.org/myimages/android10_logo_big_github.png)
-
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Android--CleanArchitecture-brightgreen.svg?style=flat)](https://android-arsenal.com/details/3/909)
