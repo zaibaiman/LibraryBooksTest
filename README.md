@@ -1,7 +1,8 @@
 LibraryBooksTest-CleanArchitecture
 =========================
 
-This is a sample app that is part of a test about how to architect asp mvc application using the [Uncle Bob's clean architecture approach](https://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html). 
+This is a sample app that is part of a test about how to architect asp mvc application using the [Uncle Bob's clean architecture approach](https://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html). We are going to use a dependency injection (DI) container.
+Ninject is our preferred DI container. It is simple, elegant, and easy to use. There are more-sophisticated alternatives, but we like the way that Ninject works with the minimum of configuration. We consider patterns to be starting points, not law, and we have found it easy to tailor our DI with Ninject to suit different projects and workflows. If you do not like Ninject, we recommend trying Unity, which is one of the Microsoft alternatives.
 
 Clean architecture
 -----------------
