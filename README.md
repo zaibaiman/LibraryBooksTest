@@ -1,7 +1,7 @@
 Android-CleanArchitecture [![Build Status](https://travis-ci.org/android10/Android-CleanArchitecture.svg?branch=master)](https://travis-ci.org/android10/Android-CleanArchitecture)
 =========================
 
-This is a sample app that is part of a test about how to architect asp mvc application using the Uncle Bob's clean architecture approach. 
+This is a sample app that is part of a test about how to architect asp mvc application using the [Uncle Bob's clean architecture approach](https://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html). 
 
 Clean architecture
 -----------------
