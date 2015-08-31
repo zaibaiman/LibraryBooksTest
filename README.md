@@ -29,7 +29,7 @@ Application Structure
 
  * `LibraryBooks.Domain` - Holds the domain entities and logic.
  * `LibraryBooks.Data` - Set up for persistence via a repository created with the Entity Framework.
- * `LibraryBooks.WebUI` - Holds the controllers and views; acting as the UI for the SportsStore application.
+ * `LibraryBooks.WebUI` - Holds the controllers and views; acting as the UI for the LibraryBooks application.
 
 
 License
