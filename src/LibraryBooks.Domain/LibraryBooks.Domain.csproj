@@ -46,7 +46,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\IAuthorRepository.cs" />
     <Compile Include="Repositories\IBookRepository.cs" />
+    <Compile Include="UseCases\AuthorsUseCase.cs" />
     <Compile Include="UseCases\BooksUseCase.cs" />
+    <Compile Include="UseCases\IAuthorsUseCase.cs" />
     <Compile Include="UseCases\IBooksUseCase.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -69,9 +69,11 @@ namespace LibraryBooks.WebUI.App_Start
 
             // Services
             kernel.Bind<IBookRepository>().To<BookRepository>().InSingletonScope();
+            kernel.Bind<IAuthorRepository>().To<AuthorRepository>().InSingletonScope();
 
             // Use Cases
             kernel.Bind<IBooksUseCase>().To<BooksUseCase>();
+            kernel.Bind<IAuthorsUseCase>().To<AuthorsUseCase>();
         }        
     }
 }
